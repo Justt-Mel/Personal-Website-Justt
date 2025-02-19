@@ -1,3 +1,48 @@
 body{
     background-color: rgb(41, 108, 62);
 }
+header
+{
+box-shadow: inset;
+}
+
+nav
+{ 
+  top: 0%;
+  width: auto;
+  text-align: center; 
+  background-color: darkcyan;
+  box-sizing: 7px groove brown;
+  box-shadow: inset;
+}
+
+nav > a
+{
+ text-decoration: none;
+  font-size: xx-large;
+  color: brown;
+  padding: .5rem;
+  padding-bottom: 0;
+}
+.name
+{
+  color: brown;
+  font-family: 'Times New Roman', Times, serif ;
+  box-shadow: inset;
+  text-align: left;
+  font-size: x-large;
+  padding-left: 15px;
+}
+
+h1
+{
+    color: cadetblue;
+}
+a:hover
+{
+color: aquamarine;
+}
+.active
+{
+    border-bottom: 2px solid brown;
+}
