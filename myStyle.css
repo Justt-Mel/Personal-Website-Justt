@@ -1,29 +1,31 @@
-body{
-    background-color: rgb(41, 108, 62);
+body
+{
+  background-color: rgb(41, 108, 62);
 }
+
 header
 {
-box-shadow: inset;
+  box-shadow: inset;
 }
 
 nav
 { 
+  box-shadow: 0 0 20px brown;
   top: 0%;
   width: auto;
   text-align: center; 
   background-color: darkcyan;
-  box-sizing: 7px groove brown;
-  box-shadow: inset;
 }
 
 nav > a
 {
- text-decoration: none;
+  text-decoration: none;
   font-size: xx-large;
   color: brown;
   padding: .5rem;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
+
 .name
 {
   color: brown;
@@ -36,13 +38,72 @@ nav > a
 
 h1
 {
+    margin-left: 1350px;
+    margin-right: 1380px;
+    border-bottom: .65rem solid brown;
+    text-align: center;
     color: cadetblue;
 }
+
 a:hover
 {
-color: aquamarine;
+  color: aquamarine;
 }
+
 .active
 {
-    border-bottom: 2px solid brown;
+    text-shadow: 2px 3px 6px wheat;
+  border-bottom: 3px solid wheat;
+}
+
+.portfolio
+{
+    margin-left: 25%;
+    margin-right: 24%;
+    text-align: center;
+    width: 50%;
+    background-color: darkcyan;
+    color: brown;
+    font-size: x-large;
+    border: 3px solid brown;
+    box-shadow: 0 0 12px wheat;
+}
+
+.Justin
+{
+   margin-left: 46%;
+   margin-right: 46%;
+   width: fit-content;
+   padding: 10px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   text-shadow: 2px 3px 3px rgb(0, 0, 0);
+   border: 3px groove darkcyan;
+   text-align: center;
+   background-color: brown;
+}
+.aboutMe
+{
+    margin-left: 25%;
+    margin-right: 24%;
+    text-align: center;
+    width: 50%;
+    background-color: darkcyan;
+    color: brown;
+    font-size: x-large;
+    border: 3px solid brown;
+    box-shadow: 0 0 12px wheat;
+}
+.quote
+{
+    font-size: x-large;
+    color: brown;
+    border: 3px  outset brown;
+    border-color: brown;
+    border-radius: 12px;
+    margin-right: 65%;
+    background-color: darkcyan;
+    box-shadow: 0 0 12px wheat;
 }
