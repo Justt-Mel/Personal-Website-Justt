@@ -67,6 +67,7 @@ a:hover
 {
     margin-left: 25%;
     margin-right: 24%;
+    margin-bottom: 5%;
     text-align: center;
     width: 50%;
     background-color: darkcyan;
@@ -112,6 +113,8 @@ a:hover
 }
 /*CSS for the footer*/
 footer{
+    display: flex;
+    justify-content: center;
     position: fixed;
     left: 0;
     right: 0;
@@ -123,12 +126,13 @@ footer{
     border: 3px solid brown;
     box-shadow: 0 0 12px wheat;
   }
+
   /*CSS for all Images outside of portfolio to make it uniform*/
   img
   {
     display: inline-flex;
-    height: 500px;
-    width: auto;
+    height: 30%;
+    width: 30%;
     box-shadow: 0 0 12px wheat;
     border:  3px solid brown;
     border-radius: 5%;
