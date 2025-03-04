@@ -7,16 +7,21 @@ header
 {
   box-shadow: inset;
 }
-
+/*Navagation bar for all the html pages*/
 nav
 { 
+  margin: 5px;
+  padding: 5px;
   box-shadow: 0 0 20px brown;
   top: 0%;
   width: auto;
   text-align: center; 
   background-color: darkcyan;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
+/* css for all anchor elements in the nav */
 nav > a
 {
   text-decoration: none;
@@ -25,17 +30,18 @@ nav > a
   padding: .5rem;
   padding-bottom: 0px;
 }
-
+/* class for my name so that i can manipulate it seperate*/
 .name
 {
+  padding-top: 7px;
   color: brown;
   font-family: 'Times New Roman', Times, serif ;
   box-shadow: inset;
   text-align: left;
-  font-size: x-large;
+  font-size: xx-large;
   padding-left: 15px;
 }
-
+/*CSS for all headings*/
 h1
 {
     text-shadow: 2px 2px 15px black;
@@ -45,20 +51,23 @@ h1
     text-align: center;
     color: cadetblue;
 }
-
+/*Hover effect for nav bar*/
 a:hover
 {
   color: aquamarine;
 }
-
+/*Shows Active Html Page*/
 .active
 {
     text-shadow: 2px 3px 6px wheat;
   border-bottom: 3px solid wheat;
 }
-
+/*class for the portfolio Paragrahs*/
 .portfolio
 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
     margin-left: 25%;
     margin-right: 24%;
     text-align: center;
@@ -69,11 +78,15 @@ a:hover
     border: 3px solid brown;
     box-shadow: 0 0 12px wheat;
 }
+/*My About Me Heading*/
+.who
+{
+  display: flex;
+  justify-content: center;
 
+}
 .Justin
 {
-   margin-left: 46%;
-   margin-right: 46%;
    width: fit-content;
    padding: 10px;
    padding-left: 10px;
@@ -85,8 +98,10 @@ a:hover
    text-align: center;
    background-color: brown;
 }
+/*CSS for the about me paragrah*/
 .aboutMe
 {
+    margin-top: 10px;
     margin-left: 25%;
     margin-right: 24%;
     text-align: center;
@@ -95,20 +110,10 @@ a:hover
     color: brown;
     font-size: x-large;
     border: 3px solid brown;
+    border-radius: 5%;
     box-shadow: 0 0 12px wheat;
 }
-.quote
-{
-    font-size: x-large;
-    color: brown;
-    border: 3px  outset brown;
-    border-color: brown;
-    border-radius: 12px;
-    margin-right: 65%;
-    background-color: darkcyan;
-    box-shadow: 0 0 12px wheat;
-}
-
+/*CSS for the footer*/
 footer{
     position: fixed;
     left: 0;
@@ -121,45 +126,103 @@ footer{
     border: 3px solid brown;
     box-shadow: 0 0 12px wheat;
   }
+  /*CSS for all Images outside of portfolio to make it uniform*/
   img
   {
-    box-shadow: outset;
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
     height: 500px;
     width: auto;
     box-shadow: 0 0 12px wheat;
+    border:  3px solid brown;
+    border-radius: 5%;
   }
+  /*CSS Controls image in portfolio paragraph to keep it to the left*/
   .textRight
   {
+    float: left;
     height: 250px;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 24px 24px 24px;
     border: 3px  outset brown;
   }
+/*controls greet flex*/
+.greet
+{
+  display:inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  .hello
-  {
-    margin-left: 25%;
-    margin-right: 24%;
+}
+  /*CSS for quote on main page*/
+.quote
+{
+    margin: 2rem;
     text-align: center;
-    width: 50%;
-    background-color: darkcyan;
-    color: brown;
+    width: 60%;
     font-size: x-large;
-    border: 3px solid brown;
+    color: brown;
+    border: 3px  outset brown;
+    border-color: brown;
+    border-radius: 12px;
+    background-color: darkcyan;
     box-shadow: 0 0 12px wheat;
+}
+  /*CSS for hello paragrah on the main page*/
+  .hello
+  { 
+     margin: 2rem;
+     text-align: center;
+     width: 29%;
+     border-radius: 12px;
+     background-color: darkcyan;
+     color: brown;
+     font-size: x-large;
+     border: 3px solid brown;
+     box-shadow: 0 0 12px wheat;
   }
+  .flexPhoto
+  {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*CSS Controls image in portfolio paragraph to keep image to the right */
   .textLeft
   {
+    float: right;
     height: 250px;
-    margin-right: 30px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 30px 25px 25px;
     border: 3px  outset brown;
     height: 200px;
   }
+/* CSS for the form html*/
+.formBox
+{
+  margin: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info
+{
+  color: brown;
+  padding: 100px;
+  border: solid brown;
+  border-style: outset;
+  background-color: darkcyan;
+  border-radius: 20px;
+  box-shadow: 3px 10px 15px brown;
+}
+input:hover
+{
+color: chocolate;
+transition: .5s;
+}
+
+@media (max-width:600px)
+{
+  body{
+    background-color: burlywood;
+  }
+
+}
