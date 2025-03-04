@@ -69,12 +69,15 @@ a:hover
     margin-right: 24%;
     margin-bottom: 5%;
     text-align: center;
-    width: 50%;
     background-color: darkcyan;
     color: brown;
     font-size: x-large;
     border: 3px solid brown;
     box-shadow: 0 0 12px wheat;
+}
+.port{
+  display: grid;
+  justify-content: space-between;
 }
 /*My About Me Heading*/
 .who
@@ -86,7 +89,6 @@ a:hover
 .Justin
 {
    width: fit-content;
-   padding: 10px;
    padding-left: 10px;
    padding-right: 10px;
    padding-top: 3px;
@@ -131,7 +133,6 @@ footer{
   img
   {
     display: inline-flex;
-    height: 30%;
     width: 30%;
     box-shadow: 0 0 12px wheat;
     border:  3px solid brown;
@@ -141,8 +142,6 @@ footer{
   .textRight
   {
     float: left;
-    height: 250px;
-    width: 30%;
     margin: 25px 24px 24px 24px;
     border: 3px  outset brown;
   }
@@ -150,8 +149,6 @@ footer{
   .textLeft
     {
       float: right;
-      height: 250px;
-      width: 30%;
       margin: 25px 30px 25px 25px;
       border: 3px  outset brown;
       height: 200px;
@@ -159,16 +156,16 @@ footer{
 /*controls greet flex*/
 .greet
 {
-  display:inline-flex;
+  display:flex;
   justify-content: center;
   flex-wrap: wrap;
 }
   /*CSS for quote on main page*/
 .quote
 {
-    margin: 2rem;
+  margin-left: 25%;
+  margin-right: 24%;
     text-align: center;
-    width: 60%;
     font-size: x-large;
     color: brown;
     border: 3px  outset brown;
@@ -180,7 +177,8 @@ footer{
   /*CSS for hello paragrah on the main page*/
   .hello
   { 
-     margin: 2rem;
+    margin-left: 25%;
+    margin-right: 24%;
      text-align: center;
      width: 29%;
      border-radius: 12px;
@@ -237,13 +235,27 @@ width: 60%;
   .textRight
   {
 width: 60%;
-
   }
- 
+ img:hover
+ {
+  transition: 2s;
+  width: 50%;
+ }
+ img{
+  transition: 2s;
+ }
 }
 @media (min-width:600px)
 {
   body{
     transition: 2s;
   }
+  img:hover
+  {
+    transition: 2s;
+    width: 50%;
+   }
+   img{
+    transition: 2s;
+   }
 }
